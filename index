@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>南投名間台灣烏龍茶製茶廠</title>
+  <meta name="description" content="位於南投縣名間鄉的台灣烏龍茶製茶廠，專注生產台灣烏龍茶，提供穩定品質與在地茶香。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo" data-i18n="brand">名間烏龍茶製茶廠</div>
+
+    <nav>
+      <a href="#about" data-i18n="navAbout">關於我們</a>
+      <a href="#tea" data-i18n="navTea">產品特色</a>
+      <a href="#contact" data-i18n="navContact">聯絡我們</a>
+    </nav>
+
+    <div class="lang-switch">
+      <button onclick="setLang('zh')">中</button>
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('ja')">日</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="eyebrow">Taiwan Oolong Tea Factory</p>
+        <h1 data-i18n="heroTitle">來自南投名間的台灣烏龍茶</h1>
+        <p data-i18n="heroDesc">
+          我們位於南投縣名間鄉，專注生產台灣烏龍茶，重視茶葉香氣、焙火穩定與製程品質。
+        </p>
+        <a class="cta" href="#contact" data-i18n="heroButton">立即聯絡</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 data-i18n="aboutTitle">關於我們</h2>
+      <p data-i18n="aboutText">
+        我們是位於台灣南投縣名間鄉的茶業工廠，長期投入台灣烏龍茶製作。從茶菁處理、萎凋、揉捻到焙火，我們重視每一道製程，希望讓每一批茶都保有穩定且乾淨的風味。
+      </p>
+    </section>
+
+    <section id="tea" class="section light">
+      <h2 data-i18n="teaTitle">產品特色</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="feature1Title">台灣產地</h3>
+          <p data-i18n="feature1Text">來自南投名間，具有台灣烏龍茶的在地風味。</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="feature2Title">穩定焙火</h3>
+          <p data-i18n="feature2Text">依茶葉狀態調整焙火，呈現溫潤茶香與順口滋味。</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="feature3Title">工廠製作</h3>
+          <p data-i18n="feature3Text">具備製茶流程經驗，適合茶行、品牌與批發合作洽詢。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 data-i18n="galleryTitle">茶葉與製程</h2>
+      <div class="gallery">
+        <div>茶園照片</div>
+        <div>茶葉照片</div>
+        <div>製茶照片</div>
+      </div>
+      <p class="note" data-i18n="galleryNote">之後可將這裡換成你的實際照片。</p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 data-i18n="contactTitle">聯絡我們</h2>
+      <p data-i18n="contactText">歡迎茶行、品牌、批發與合作夥伴與我們聯繫。</p>
+
+      <div class="contact-box">
+        <p><strong data-i18n="addressLabel">地址：</strong>南投縣名間鄉</p>
+        <p><strong>Email：</strong>your-email@example.com</p>
+        <p><strong>LINE：</strong>your-line-id</p>
+        <p><strong data-i18n="phoneLabel">電話：</strong>請填入電話</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 <span data-i18n="brand">名間烏龍茶製茶廠</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
