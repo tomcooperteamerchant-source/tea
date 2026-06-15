@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", Arial, sans-serif;
+  color: #2d2a24;
+  background: #fffdf8;
+  line-height: 1.7;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fffdf8;
+  border-bottom: 1px solid #e6dfcf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 6%;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #365c2f;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #2d2a24;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.lang-switch button {
+  border: 1px solid #365c2f;
+  background: white;
+  color: #365c2f;
+  padding: 5px 9px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 6%;
+  background:
+    linear-gradient(rgba(255,253,248,0.82), rgba(255,253,248,0.82)),
+    url("https://images.unsplash.com/photo-1563911892437-1feda0179e1b?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  max-width: 680px;
+}
+
+.eyebrow {
+  color: #6d8a36;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 10px 0 20px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #365c2f;
+}
+
+.cta {
+  display: inline-block;
+  background: #365c2f;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 999px;
+  margin-top: 20px;
+}
+
+.section {
+  padding: 72px 6%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.light {
+  background: #f4f0e6;
+  max-width: none;
+}
+
+.light > h2,
+.light > .cards {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  color: #365c2f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery div {
+  background: #e8dfcb;
+  height: 180px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b5f47;
+}
+
+.note {
+  color: #777;
+  font-size: 14px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-box {
+  background: #f4f0e6;
+  padding: 28px;
+  border-radius: 18px;
+  display: inline-block;
+  text-align: left;
+  min-width: 300px;
+}
+
+footer {
+  text-align: center;
+  padding: 28px;
+  background: #365c2f;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .cards,
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
